@@ -1,0 +1,275 @@
+<rules>
+<entry name="Box Enterprise">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet-enterprise-access</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ enterprise_action }}</action>
+  <description>1.2.1 Control Box Enterprise</description>
+</entry>
+<entry name="Box Consumer">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet-consumer-access</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ consumer_action }}</action>
+  <description>1.2.2 Control Box Consumer</description>
+</entry>
+<entry name="Box Uploads">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet-uploading</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ upload_action }}</action>
+  <description>1.3 Control Uploads - Box</description>
+</entry>
+<entry name="Box Downloads">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet-downloading</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ download_action }}</action>
+  <description>1.4 Control Downloads - Box</description>
+</entry>
+<entry name="Box Editing">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet-editing</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ edit_action }}</action>
+  <description>1.5 Control File Management - Box</description>
+</entry>
+<entry name="Box Sharing">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet-sharing</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ sharing_action }}</action>
+  <description>1.6 Control Sharing - Box</description>
+</entry>
+<entry name="Sanction Box">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>boxnet</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ sanction_action }}</action>
+  <description>1.1 Sanction Box</description>
+</entry>
+<entry name="SSL and Web">
+  <target>
+    <negate>no</negate>
+  </target>
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>ssl</member>
+    <member>web-browsing</member>
+  </application>
+  <service>
+    <member>service-http</member>
+    <member>service-https</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>allow</action>
+</entry>
+</rules>
